@@ -1,0 +1,54 @@
+.Oursevices-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Oursevices-card {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.Oursevices-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.Oursevices-card:hover .Oursevices-card-inner {
+  transform: rotateY(180deg);
+}
+
+.Oursevices-card-front,
+.Oursevices-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.Oursevices-card-front {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.Oursevices-card-back {
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid var(--main-color);
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}

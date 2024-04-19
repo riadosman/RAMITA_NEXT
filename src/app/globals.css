@@ -1,33 +1,176 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --main-color: #191d88;
+  --primary-color: #af7cdb; */
+  --main-color: #19b7bd;
+  --primary-color: #191d88;
+  --primary-gradient: linear-gradient(to left, #af7cdb 70%, #382a68);
+  --secondry-color: #19b7bd;
+  --secondry-gradient: linear-gradient(to bottom, #382a68, #af7cdb);
+  --spacific-color: #ffc436;
+  /* #19b7bd */
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Cairo", sans-serif;
+  background: #ffff;
+  background-repeat: no-repeat;
+  color: var(--secondry-gradient);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.bg-main {
+  background: var(--main-color);
+}
+.bg-primary-c {
+  background: var(--primary-color);
+}
+.bg-secondry {
+  background: var(--secondry-gradient);
+}
+.bg-spacific {
+  background: var(--spacific-color);
+}
+.navbar {
+  padding: 10px 0;
+}
+/* CARDS */
+.Home .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+hr.bg-main {
+  height: 5px;
+  border: none;
+}
+.methods {
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.fast-container {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  flex-direction: column;
+  align-items: end;
+}
+.fast,
+.fast-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  margin: -10px;
+  color: white;
+}
+.fast-container span {
+  border: 14px solid;
+  border-color: #19b7bda8 transparent transparent transparent;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  transition: 0.2s;
+  display: none;
+}
+.fast-message {
+  width: 250px;
+  text-align: right;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  line-height: 25px;
+  display: none;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.fast-container:hover .fast-message,
+.fast-container:hover span {
+  display: block;
+}
+/* contact */
+
+.contact {
+  text-align: right;
+  height: calc(100vh - 68px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.contact .card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 50px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+/* button */
+.contact .card svg {
+  fill: white;
+}
+.contact .button {
+  display: flex;
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 0.6s ease;
+}
+.contact .button.instagram {
+  background-color: #d62976;
+}
+.contact .button.Whatsapp {
+  background-color: #25d366;
+}
+.contact .button.Facebook {
+  background-color: #4267b2;
+}
+.contact .button.Website {
+  background-color: var(--main-color);
+}
+.contact .button svg {
+  height: 30px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.contact p:first-of-type {
+  font-size: 45px;
+}
+.contact p:last-of-type {
+  font-size: 20px;
+}
+
+.contact .button:hover {
+  box-shadow: none;
 }
