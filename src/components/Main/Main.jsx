@@ -1,12 +1,12 @@
-import "./Main.css";
+import "./main.css";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Main = (props) => {
   return (
     <main className="container">
       <div className="main-img">
-        <Image src={props.img} alt={props.title} width={400} height={400}/>
+        <Image src={props.img} alt={props.title} width={400} height={400} />
       </div>
       <div className="content">
         <p>{props.title}</p>

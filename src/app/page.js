@@ -3,7 +3,7 @@ import Main from "../components/Main/Main";
 import MethodsCard from "../components/MethodsCard/MethodsCard";
 import Titlecom from "../components/TItle/Titlecom";
 import Oursevices from "../components/Ourservices/Oursevices";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 import "./globals.css";
 import {
