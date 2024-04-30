@@ -6,6 +6,7 @@ import Oursevices from "../components/Ourservices/Oursevices";
 import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 import "./globals.css";
+import "./media.css";
 import {
   FaPeopleGroup,
   FaMapLocationDot,

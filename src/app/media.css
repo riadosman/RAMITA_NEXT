@@ -1,0 +1,131 @@
+@media (max-width: 600px) {
+  /* navbar folder */
+  .navbar .container ul.nav {
+    display: none;
+  }
+
+  .navbar .humburger-menu {
+    display: block;
+    z-index: 5;
+  }
+  .footer-section .nav-link {
+    padding: 0;
+  }
+  /* main folder */
+  main.container {
+    display: flex;
+    flex-direction: column;
+  }
+  main.container .content p:first-of-type {
+    font-size: 2rem;
+    width: 358px;
+    margin: 20px -25px;
+  }
+  main.container .content p:last-of-type {
+    width: 220px;
+    margin: 0 -58px;
+  }
+  .text-content p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    margin: 20px 0;
+    width: 200px;
+    height: 300px;
+  }
+  .cards .card .img {
+    height: 100px;
+    font-size: 90px;
+  }
+  .Oursevices-card-inner {
+    margin: 10px auto;
+  }
+  div.methods {
+    height: initial;
+    overflow: auto;
+  }
+  .contact {
+    padding: 0;
+    flex-direction: column !important;
+  }
+  .contact .card {
+    margin: 0;
+  }
+  .contact p:first-of-type {
+    margin-top: 0px;
+  }
+  .packets-container {
+    grid-template-columns: 1fr !important;
+  }
+  .full-menu {
+    display: block !important;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .navbar .container .logo {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  div.main-img img {
+    width: 300px;
+    height: 300px;
+  }
+  main.container .content p:first-of-type {
+    font-size: 1.2rem;
+    width: 250px;
+    margin: 20px -85px;
+  }
+  .navbar {
+    padding: 10px 5px;
+  }
+  .Oursevices-card {
+    max-height: 170px;
+    max-width: 300px;
+    margin: 90px auto;
+  }
+  .Oursevices-cards {
+    display: inline-block;
+  }
+  .contact {
+    /* padding: 200px 0; */
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+  }
+
+  .contact .card {
+    padding: 20px;
+    margin: 10px auto;
+  }
+  .contact p:first-of-type {
+    margin-top: 0;
+    font-size: 35px;
+  }
+  .packets-container {
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    padding: 10px;
+  }
+  .Oursevices-card-back {
+    text-align: center;
+    top: 57px;
+    height: fit-content;
+    transform: none;
+    top: 173px;
+  }
+}

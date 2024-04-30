@@ -60,3 +60,14 @@
   padding: 10px 0;
   font-size: 0.9rem;
 }
+.footer-media {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.footer-media a.button {
+  text-decoration: none;
+  color: white;
+}

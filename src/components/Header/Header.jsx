@@ -5,7 +5,7 @@ import "./header.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import logo from "../../../public/images/logo.png";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Navbar = () => {
   const [showMenu, setshowMenu] = useState(false);
@@ -17,7 +17,8 @@ const Navbar = () => {
   };
   const goToServices = async () => {
     await navigate.replace("/");
-    window.scrollTo(0, 1300);
+    const servicesElement = await document.getElementById("services");
+    servicesElement.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div>
@@ -36,7 +37,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" onClick={goToServices}>
+              <a className="nav-link" href="#services" onClick={goToServices}>
                 خدماتنا
               </a>
             </li>
@@ -77,7 +78,11 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" onClick={goToServices}>
+                  <a
+                    className="nav-link"
+                    href="#services"
+                    onClick={goToServices}
+                  >
                     خدماتنا
                   </a>
                 </li>

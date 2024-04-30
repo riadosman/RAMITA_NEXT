@@ -6,21 +6,24 @@ main {
   min-height: calc(100vh - 68px);
 }
 main .content {
-  width: 60%;
+  width: 50%;
   text-align: right;
   font-weight: 700;
 }
 main .content p:first-of-type {
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 2;
 }
 main .content p:last-of-type {
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 2;
 }
 main .content .arr-list {
   list-style-type: none;
   position: relative;
+}
+main .content .arr-list li {
+  margin: 5px 0;
 }
 main .content .arr-list li::after {
   display: inline-block;
@@ -31,7 +34,7 @@ main .content .btn {
   padding: 10px 40px;
 }
 .main-img img {
-  width: 350px;
+  width: 400px;
   border-radius: 20px;
 }
 
