@@ -10,10 +10,13 @@
 }
 
 .img {
-    width: 100%;
-    font-size: 150px;
-    height: 225px;
-    text-align: center;
+  width: 100%;
+  font-size: 150px;
+  height: 225px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {

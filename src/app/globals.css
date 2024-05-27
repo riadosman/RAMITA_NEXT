@@ -1,7 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 :root {
-  /* --main-color: #191d88;
-  --primary-color: #af7cdb; */
   --main-color: #19b7bd;
   --primary-color: #191d88;
   --primary-gradient: linear-gradient(to left, #af7cdb 70%, #382a68);

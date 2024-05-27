@@ -25,6 +25,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: right;
 }
 
 /* .nav-link */
@@ -41,11 +42,7 @@ nav ul {
   transition-duration: 400ms;
   transition-property: color;
   padding: 0 40px;
-}
-
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--secondry-color);
+  text-align: right;
 }
 
 .nav-link:focus:after,

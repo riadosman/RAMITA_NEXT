@@ -51,17 +51,15 @@ const Home = () => {
       <hr className="bg-main" />
       <Titlecom text="بعض الطرق التي نستخدمها للحصول على افضل النتائج" />
       <div className="cards">
-        {data.map((e, i) => {
-          return (
-            <Link href={`/Servise/${i + 1}`} key={i}>
-              <MethodsCard
-                title={e.title}
-                description={e.description}
-                img={e.img}
-              />
-            </Link>
-          );
-        })}
+        {data.map((e, i) => (
+          <Link href={`/Servise/${i + 1}`} key={i}>
+            <MethodsCard
+              title={e.title}
+              description={e.description}
+              img={e.img}
+            />
+          </Link>
+        ))}
       </div>
 
       <Titlecom text="خدماتنا" />

@@ -15,11 +15,6 @@ const Navbar = () => {
     setshowMenu(false);
     e.checked = false;
   };
-  const goToServices = async () => {
-    await navigate.replace("/");
-    const servicesElement = await document.getElementById("services");
-    servicesElement.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <div>
       <nav className="navbar">
@@ -30,15 +25,15 @@ const Navbar = () => {
               Ramita
             </Link>
           </div>
-          <ul className="nav mb-2 mb-lg-0">
+          <ul className="nav mb-2 mb-lg-0 text-right">
             <li className="nav-item">
               <Link className="nav-link" href="/">
                 الصفحه الرئيسية
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={goToServices}>
-                خدماتنا
+              <a className="nav-link" href="/AboutUs">
+                من نحن
               </a>
             </li>
             <li className="nav-item">
