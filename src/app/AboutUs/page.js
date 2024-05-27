@@ -6,6 +6,7 @@ import Titlecom from "@/components/TItle/Titlecom";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { aboutData as data } from "../../data/data";
 import {
   FaPeopleGroup,
   FaMapLocationDot,
@@ -18,31 +19,7 @@ export default function AboutUs() {
   const [contact, setContact] = useState("");
   const [issue, setIssue] = useState("");
   const [message, setMessage] = useState("");
-  const data = [
-    {
-      title: "الابتكار",
-      description:
-        "نحن نعمل باستمرار على تطوير الخدمات الإبداعية، وإيجاد طرق جديدة تلبي احتياجات عملائنا المتغيرة.",
-      img: <FaPeopleGroup />,
-    },
-    {
-      title: "المصداقية والشفافية",
-      description:
-        "نحن نهدف دائمًا إلى القيام بالشيء الصحيح من خلال الثقة والصدق مع عملائنا",
-      img: <FaPeopleGroup />,
-    },
-    {
-      title: "الكفاءة",
-      description:
-        "نعمل بكفاءة عالية لضمان تحقيق أفضل النتائج لعملائنا بأقل تكلفة",
-      img: <FaPeopleGroup />,
-    },
-    {
-      title: "العمل الجماعي",
-      description: "نؤمن بأهمية العمل الجماعي كعنصر أساسي للنجاح",
-      img: <FaPeopleGroup />,
-    },
-  ];
+
   const handleSubmit = () => {
     if (link && contact && issue) {
       const text = `الرابط: ${link} طريقه التواصل: ${contact} المشكله: ${issue}`;

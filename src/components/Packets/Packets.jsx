@@ -1,11 +1,7 @@
 import React from "react";
 import "./packets.css";
+import messages from "../../data/data";
 const Packets = () => {
-  const messages = [
-    "السلام عليكم اريد البدء بلخطه الاساسيه",
-    "السلام عليكم اريد البدء بلخطه الأعمال",
-    "السلام عليكم اريد البدء بلخطه المتقدمة",
-  ];
   return (
     <div className="packets-container container" dir="rtl">
       <div class="bouquet">
