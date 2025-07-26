@@ -2,7 +2,18 @@ import img5 from "../../public/images/05.jpg";
 import img4 from "../../public/images/04.jpg";
 import img1 from "../../public/images/01.jpg";
 import img2 from "../../public/images/03.jpg";
-
+import {
+  FaPeopleGroup,
+  FaMapLocationDot,
+  FaMagnifyingGlass,
+  FaChartPie,
+} from "react-icons/fa6";
+import {
+  GiDiscussion,
+  GiAtom,
+  GiCheckMark,
+  GiAchievement,
+} from "react-icons/gi";
 export const ServiseCards = [
   {
     title: "تعرف على جمهورك المستهدف بشكل أفضل",
@@ -95,4 +106,63 @@ export const MethodsCard = [
       "متجاوب مع كل الأجهزة  *",
     ],
   },
+];
+export const data = [
+  {
+    title: "تحليل الجمهور",
+    description: "تحديد جمهورك المستهدف وتجزئته واكتشاف تفضيلات المستهلك",
+    img: <FaPeopleGroup />,
+  },
+  {
+    title: "تحديد المنافسين",
+    description:
+      "دراسة المنافسين ونقاط قوتهم وضعفهم والتهديدات التي قد تواجهها",
+    img: <FaMapLocationDot />,
+  },
+  {
+    title: "اختبار الإعلان",
+    description: "مقارنة نسختين مختلفتين من الإعلان لتحديد أيهما أكثر فعالية",
+    img: <FaMagnifyingGlass />,
+  },
+  {
+    title: "قياس نتائج الحملة",
+    description:
+      "تحليل بيانات الحملة يساعدك في اتخاذ قرارات بشأن حملتك المستقبلية",
+    img: <FaChartPie />,
+  },
+];
+export const aboutData = [
+  {
+    title: "الابتكار",
+    description:
+      "نحن نعمل باستمرار على تطوير الخدمات الإبداعية، وإيجاد طرق جديدة تلبي احتياجات عملائنا المتغيرة.",
+    img: <GiAtom />,
+  },
+  {
+    title: "المصداقية والشفافية",
+    description:
+      "نحن نهدف دائمًا إلى القيام بالشيء الصحيح من خلال الثقة والصدق مع عملائنا",
+    img: <GiCheckMark />,
+  },
+  {
+    title: "الكفاءة",
+    description:
+      "نعمل بكفاءة عالية لضمان تحقيق أفضل النتائج لعملائنا بأقل تكلفة",
+    img: <GiAchievement />,
+  },
+  {
+    title: "العمل الجماعي",
+    description: "نؤمن بأهمية العمل الجماعي كعنصر أساسي للنجاح",
+    img: <GiDiscussion />,
+  },
+];
+export const ourServicesData = [
+  ["/images/marketing.jpg", "التسويق الرقمي"],
+  ["/images/fullimgs.jpg", "تصميم الهوية البصرية"],
+  ["/images/webdesign.jpg", "تصميم مواقع الويب"],
+];
+export const messages = [
+  "السلام عليكم اريد البدء بلخطه الاساسيه",
+  "السلام عليكم اريد البدء بلخطه الأعمال",
+  "السلام عليكم اريد البدء بلخطه المتقدمة",
 ];
