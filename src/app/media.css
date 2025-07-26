@@ -128,4 +128,7 @@
     transform: none;
     top: 173px;
   }
+  main {
+    padding: 10px;
+  }
 }
